@@ -1,12 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
-import styled from "styled-components";
-import { BrowserRouter } from "react-router-dom";
-import Posts from "./components/posts/Posts";
-import Header from "./components/header/Header";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from '../../components/navbar/Navbar'
+import Posts from '../../components/posts/Posts'
+import Header from '../../components/header/Header'
 
-function App() {
+
+function HomePage() {
   return (
     <div className="app">
       <BrowserRouter>
@@ -23,7 +20,7 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
 
 const Wrap = styled.div`
   display: flex;

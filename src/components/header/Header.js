@@ -35,4 +35,5 @@ const Main = styled.div`
   border-right: 0.5px solid #00000022;
   position: sticky;
   top: 0px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 `;
