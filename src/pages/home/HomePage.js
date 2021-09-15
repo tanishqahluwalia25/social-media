@@ -1,22 +1,21 @@
-import Navbar from '../../components/navbar/Navbar'
-import Posts from '../../components/posts/Posts'
-import Header from '../../components/header/Header'
-
+import Navbar from "../../components/navbar/Navbar";
+import Posts from "../../components/posts/Posts";
+import Header from "../../components/header/Header";
+import Profile from "../../components/profile/Profile";
+import styled from "styled-components";
 
 function HomePage() {
   return (
-    <div className="app">
-      <BrowserRouter>
-        <Wrap>
-          <Navbar />
-          <Main>
-            <Header />
-            <Posts />
-          </Main>
-          <Profile />
-        </Wrap>
-      </BrowserRouter>
-    </div>
+    <>
+      <Wrap>
+        <Navbar />
+        <Main>
+          <Header />
+          <Posts />
+        </Main>
+        <Profile />
+      </Wrap>
+    </>
   );
 }
 
@@ -25,14 +24,6 @@ export default HomePage;
 const Wrap = styled.div`
   display: flex;
 `;
-// const Navbar = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   flex: 0.05;
-//   height: 2rem;
-//   background-color: white;
-//   width: 100%;
-// `;
 
 const Main = styled.div`
   display: flex;
@@ -64,8 +55,4 @@ const Main = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     /* background: dodgerblue; */
   }
-`;
-
-const Profile = styled.div`
-  flex: 0.3;
 `;
