@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import styled from "styled-components";
+import Profile from "./components/profile/Profile"
 import { BrowserRouter } from "react-router-dom";
 import Posts from "./components/posts/Posts";
 import Header from "./components/header/Header";
@@ -67,6 +67,6 @@ const Main = styled.div`
   }
 `;
 
-const Profile = styled.div`
-  flex: 0.3;
-`;
+// const Profile = styled.div`
+//   flex: 0.3;
+// `;
