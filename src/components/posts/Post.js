@@ -41,5 +41,7 @@ const Main = styled.div`
   /* padding: 5px; */
   padding: 10px 5px;
   /* max-width: 400px; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(125, 125, 125, 0.1) 0px 0px 100px 0px;
+  background-color: black;
+  border: 1px solid #111;
 `;
