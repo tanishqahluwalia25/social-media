@@ -29,30 +29,11 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: #dddddd34;
   max-width: 1000px;
   padding: 0px;
   padding-bottom: 10px;
-  overflow: auto;
+  /* overflow: auto; */
   max-height: 100vh;
-
-  /* width */
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background: #fff;
-  }
-
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: linear-gradient(#fd297a, #9424f0);
-  }
-
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    /* background: dodgerblue; */
-  }
+  /* background-color: gray; */
+  background-color: black;
 `;

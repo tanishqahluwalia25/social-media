@@ -1,10 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Logos } from "../../resources/resources";
+import logo from "../../assets/logos/logo-black.png";
 const Header = () => {
   return (
     <Main>
-      <Logo>NORD</Logo>
+      <Logo>
+        <LogoImage src={Logos.svg.color} alt="hi" />
+        <LogoHeading>NORD</LogoHeading>
+      </Logo>
       <Search placeholder="Search" />
     </Main>
   );
@@ -12,9 +16,27 @@ const Header = () => {
 
 export default Header;
 
+const LogoHeading = styled.p`
+  font-size: 35px;
+  font-weight: 200;
+  font-family: "montserrat";
+  /* color: #aaa; */
+  /* font-style: italic; */
+  padding-left: 5px;
+`;
+const LogoImage = styled.img`
+  height: 40px;
+  margin: 0px 5px;
+  display: none;
+`;
+
 const Logo = styled.p`
   font-weight: 200;
-  font-size: 25px;
+  font-size: 40px;
+  /* height: 5rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Search = styled.input`
@@ -37,4 +59,7 @@ const Main = styled.div`
   position: sticky;
   top: 0px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: black;
+  color: white;
+  font-family: monospace !important;
 `;

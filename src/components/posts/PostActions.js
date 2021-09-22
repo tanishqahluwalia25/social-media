@@ -6,7 +6,7 @@ import { TiLocationArrow } from "react-icons/ti";
 import { FaSave } from "react-icons/fa";
 const PostActions = () => {
   const icon = {
-    color: "#00000022",
+    color: "#ffffff55",
     size: 20,
     className: "icon",
   };
