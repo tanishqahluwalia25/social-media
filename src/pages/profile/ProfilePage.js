@@ -7,7 +7,6 @@ import Profile from "../../components/single/Profile";
 const ProfilePage = () => {
   return (
     <Background>
-      <Header />
       <Wrap>
         <Profile />
         <Break />
@@ -64,10 +63,10 @@ const Wrap = styled.div`
 
 const Break = styled.hr`
   border: none;
-  content: "Posts"
+  content: "Posts";
   width: 95%;
   border-top: 3px solid gray;
-  margin auto;
+  margin: auto;
   margin-bottom: 30px;
 `;
 

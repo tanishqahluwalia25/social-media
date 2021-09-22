@@ -57,7 +57,7 @@ function App() {
           </form>
         </Modal>
         <Switch>
-          <Route exact path="/home" component={HomePage} />
+          <Route path="/home" component={HomePage} />
           <Route exact path="/auth" component={AuthPage} />
           <Route exact path="/profile" component={ProfilePage} />
           <Route exact path="/create" component={Create} />
