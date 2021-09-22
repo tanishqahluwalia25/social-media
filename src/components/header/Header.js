@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <Main>
-      <Logo>Instagram</Logo>
+      <Logo>NORD</Logo>
       <Search placeholder="Search" />
     </Main>
   );
@@ -14,7 +14,7 @@ export default Header;
 
 const Logo = styled.p`
   font-weight: 200;
-  font-size: 20px;
+  font-size: 25px;
 `;
 
 const Search = styled.input`
@@ -29,8 +29,9 @@ const Main = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem;
-  background: white;
+  padding: 0.5rem 3rem;
+  background: black;
+  color: white;
   border-left: 0.5px solid #00000022;
   border-right: 0.5px solid #00000022;
   position: sticky;

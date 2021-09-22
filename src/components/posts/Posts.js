@@ -13,10 +13,11 @@ const Posts = () => {
       breakpointCols={breakpointColumnsObj}
       className="my-masonry-grid"
       columnClassName="my-masonry-grid_column"
+      
     >
       <Post />
       <Post />
-      <Post />
+      <Post style={{background: "black"}}/>
       <Post />
       <Post />
       <Post />

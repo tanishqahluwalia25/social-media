@@ -31,6 +31,7 @@ const Prof = styled.div`
   border: none;
   border-left: 1px solid black;
   overflow: auto;
+  
   /* width */
   &::-webkit-scrollbar {
     width: 5px;

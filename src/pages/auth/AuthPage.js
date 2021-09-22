@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Login from "../../components/login/Login";
 // import Svg from "./Svg";
 
-import LeftImg from "../../assets/login-signin (1).svg";
+import LeftImg from "../../assets/login-signin.svg";
 
 const AuthPage = () => {
   return (

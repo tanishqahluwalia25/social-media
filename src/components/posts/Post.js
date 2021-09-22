@@ -30,7 +30,7 @@ const Image = styled.img`
 
 const Main = styled.div`
   border-radius: 1rem;
-  background-color: white;
+  background-color: black;
   display: flex;
   flex-direction: column;
   flex: 1;
