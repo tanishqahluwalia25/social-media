@@ -7,8 +7,8 @@ import SinglePost from "./SinglePost";
 const Posts = () => {
   const breakpointColumnsObj = {
     default: 3,
-    1100: 2,
-    700: 1,
+    1000: 2,
+    600: 1,
   };
 
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -47,7 +47,6 @@ const Posts = () => {
           <Post />
           <Post />
           <Post />
-          <Post />
         </Masonry>
       </Main>
     </>
@@ -57,8 +56,9 @@ const Posts = () => {
 export default Posts;
 
 const Main = styled.div`
-  /* background-color: gray; */
+  margin: 0 15px 0 40px;
   overflow-y: scroll;
+  
   /* width */
   &::-webkit-scrollbar {
     width: 5px;
@@ -72,10 +72,5 @@ const Main = styled.div`
   /* Handle */
   &::-webkit-scrollbar-thumb {
     background: linear-gradient(#fd297a, #9424f0);
-  }
-
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    /* background: dodgerblue; */
   }
 `;

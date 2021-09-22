@@ -9,7 +9,6 @@ const Profile = () => {
   return (
     <Prof>
       <BellBtn>
-        {/* <RiEditBoxLine/> */}
         <VscBellDot />
       </BellBtn>
       <Info />

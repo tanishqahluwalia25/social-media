@@ -10,16 +10,17 @@ function HomePage() {
   return (
     <>
       <Wrap>
-        <Navbar />
         <Switch>
           <Main>
             <Header />
-
             <Route exact path="" component={Posts} />
             <Route exact path="/home/profile" component={ProfilePage} />
           </Main>
         </Switch>
-        <Profile />
+        <Show>
+          <Profile />
+        </Show>
+        <Navbar />
       </Wrap>
     </>
   );
@@ -35,11 +36,16 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  max-width: 1000px;
+  // max-width: 1000px;
   padding: 0px;
   padding-bottom: 10px;
   /* overflow: auto; */
   max-height: 100vh;
   /* background-color: gray; */
   background-color: black;
+`;
+const Show = styled.div`
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;

@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import AuthPage from "./pages/auth/AuthPage";
 import ProfilePage from "./pages/profile/ProfilePage";
-import Create from "./pages/create/Create";
 import Modal from "react-modal";
 import { useState } from "react";
 
@@ -60,7 +59,6 @@ function App() {
           <Route path="/home" component={HomePage} />
           <Route exact path="/auth" component={AuthPage} />
           <Route exact path="/profile" component={ProfilePage} />
-          <Route exact path="/create" component={Create} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -1,14 +1,43 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import ReactModal from "react-modal";
 import styled from "styled-components";
 import Post from "./Post";
+import CreatePost from "../create/CreatePost";
 
 const Posts = () => {
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      padding: "0",
+      borderRadius: "15px",
+    },
+  };
+  const [modalIsOpen, setIsOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   return (
     <div>
+      <ReactModal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Example Modal"
+        style={customStyles}
+      >
+        <CreatePost />
+      </ReactModal>
+
       <Head>Posts</Head>
-      <Button>
-        <Link to="/create">Create Post</Link>
-      </Button>
+      <Button onClick={openModal}>Create Post</Button>
       <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
       <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
       <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
