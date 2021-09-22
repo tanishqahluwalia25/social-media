@@ -19,6 +19,7 @@ const PostInfo = () => {
         </Left>
         <RiBookmark3Line {...icon} />
       </Icons>
+      <Likes>Liked by tanishq and {Math.floor(Math.random() * 300)} others</Likes>
       <Caption>
         Lorem Ipsum has been the industry's standard dummy text ever since the
         1500.
@@ -43,16 +44,21 @@ const Icons = styled.div`
   justify-content: space-between;
 `;
 const Left = styled.div`
-  width: 33%;
+  width: 100px;
   display: flex;
   justify-content: space-between;
   text-align: left;
+`;
+const Likes = styled.div`
+  font-size: 14px;
+  color: rgb(220,220,220);
+  // color: white;
+  margin-top: 5px;
 `;
 const Caption = styled.div`
   font-size: 14px;
   margin: 5px 0px;
 `;
-
 const View = styled.div`
   font-size: 12px;
   color: grey;
