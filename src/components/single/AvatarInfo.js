@@ -21,6 +21,8 @@ const User = styled.div`
   text-align: left;
   margin: 15px;
   height: 45px;
+  display: flex;
+  
 `;
 
 const ProfileImg = styled.img`

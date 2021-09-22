@@ -45,7 +45,7 @@ const Prof = styled.div`
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: auto
+    background: auto;
     // background: linear-gradient(#fd297a, #9424f0);
     border-radius: 10px;
   }

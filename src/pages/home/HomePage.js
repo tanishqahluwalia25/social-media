@@ -3,16 +3,22 @@ import Posts from "../../components/posts/Posts";
 import Header from "../../components/header/Header";
 import Profile from "../../components/profile/Profile";
 import styled from "styled-components";
+import { Route, Switch } from "react-router";
+import ProfilePage from "../profile/ProfilePage";
 
 function HomePage() {
   return (
     <>
       <Wrap>
         <Navbar />
-        <Main>
-          <Header />
-          <Posts />
-        </Main>
+        <Switch>
+          <Main>
+            <Header />
+
+            <Route exact path="" component={Posts} />
+            <Route exact path="/home/profile" component={ProfilePage} />
+          </Main>
+        </Switch>
         <Profile />
       </Wrap>
     </>

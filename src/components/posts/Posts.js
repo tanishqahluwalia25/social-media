@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Post from "./Post";
+import Post from "../single/Post";
 import Masonry from "react-masonry-css";
 import styled from "styled-components";
 import ReactModal from "react-modal";

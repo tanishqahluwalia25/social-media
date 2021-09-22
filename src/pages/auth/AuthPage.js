@@ -11,10 +11,7 @@ const AuthPage = () => {
       <Wrap>
         <Left>
           <LeftAbsolute>
-            <Heading>
-              Welcome to <br />
-              Instagram
-            </Heading>
+            <Heading>NORD</Heading>
             <LeftImage src={LeftImg} />
           </LeftAbsolute>
         </Left>
