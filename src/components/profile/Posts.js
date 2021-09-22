@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Post from "./Post";
 
@@ -5,13 +6,15 @@ const Posts = () => {
   return (
     <div>
       <Head>Posts</Head>
-      <Button>Create Post</Button>
-      <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
-      <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
-      <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
-      <Post src="https://images.unsplash.com/photo-1519417688547-61e5d5338ab0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9zdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
-      <Post src="https://images.unsplash.com/photo-1519417688547-61e5d5338ab0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9zdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
-      <Post src="https://images.unsplash.com/photo-1519417688547-61e5d5338ab0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9zdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/>
+      <Button>
+        <Link to="/create">Create Post</Link>
+      </Button>
+      <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+      <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+      <Post src="https://images.unsplash.com/photo-1585416294584-b849d9e571ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9zdHN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+      <Post src="https://images.unsplash.com/photo-1519417688547-61e5d5338ab0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9zdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+      <Post src="https://images.unsplash.com/photo-1519417688547-61e5d5338ab0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9zdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+      <Post src="https://images.unsplash.com/photo-1519417688547-61e5d5338ab0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9zdHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
     </div>
   );
 };

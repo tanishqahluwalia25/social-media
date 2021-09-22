@@ -20,6 +20,7 @@ export default Post;
 const Card = styled.div`
   height: auto;
   width: auto;
+  max-width: 500px;
   background: black;
   display: inline-block;
   border-radius: 25px;
